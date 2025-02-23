@@ -3,25 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Simple</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Page 1</title>
 </head>
 
 <body>
-    <header>
-        <h1>Bienvenue sur mon site</h1>
-    </header>
-    <main>
-        <p>dernier test</p>
-        <button onclick="window.location.href='https://the-kameleon.github.io/site2/'">
-            Aller sur le site
-        </button>
-    </main>
-    <footer>
-        <p>&copy; 2025 - Mon Site</p>
-    </footer>
+    <h1>Page 1</h1>
+    <p>Bienvenue sur la Page 1. Cliquez sur le bouton pour ouvrir la Page 2 et récupérer le contenu de Page 1.</p>
+    <button onclick="openPage2()">Ouvrir Page 2</button>
 
+    <script>
+        function openPage2() {
+            // Ouvre la Page 2 dans une nouvelle fenêtre
+            let page2Window = window.open('page2.html', 'Page 2', 'width=500,height=500');
+        };
+
+    </script>
 </body>
 
 </html>
